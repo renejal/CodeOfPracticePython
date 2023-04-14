@@ -2,8 +2,7 @@ import requests
 
 class Employee:
     """A sample Employe class"""
-    raise_amt  = 1.05
-
+    raise_amt = 1.05
     def __init__(self, first, last, pay) -> None:
         self.first = first
         self.last = last
@@ -11,7 +10,7 @@ class Employee:
     
     @property
     def email(self):
-        return '{}.{}@gmail.com'.format(self.first,self.last)
+        return '{}.{}@gmail.com'.format(self.first, self.last)
     
     @property
     def fullname(self):
