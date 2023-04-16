@@ -12,9 +12,9 @@ def variable_no_utilizada():
 
 
 def show_payments(payments: List[int]) -> str:
-    # este es un comentario muy lagor y necesito formatearlos
-    # a uno mas corot en dos lienas
-    # se ben serparar para que se mas facil de leeer esto es un problemas
+    # este es un comentario muy lagor y necesito formatearlos a uno mas corot
+    # en dos lienas se ben serparar para que se mas facil de leeer esto es
+    # unproblemas
     result_payments: str = ""
     for payment in payments:
         if len(result_payments) == 0:
