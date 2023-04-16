@@ -1,0 +1,11 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml # revisar formato de yaml
+    -   id: end-of-file-fixer # Agregar una linea en blanco al final del archivo
+    -   id: trailing-whitespace # Para quitar los espacio al final de la linea
+-   repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+    -   id: black
