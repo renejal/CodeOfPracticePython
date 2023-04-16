@@ -1,6 +1,16 @@
 from typing import List
 
 
+def variable_no_utilizada():
+    # la variablace C no se usa
+    a = 1
+    b = 2
+    if a > b:
+        a = b
+    else:
+        pass
+
+
 def show_payments(payments: List[int]) -> str:
     # este es un comentario muy lagor y necesito formatearlos
     # a uno mas corot en dos lienas
