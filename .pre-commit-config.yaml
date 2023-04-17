@@ -5,11 +5,9 @@ repos:
       - id: check-yaml # revisar formato de yaml
       - id: end-of-file-fixer # Agregar una linea en blanco al final del archivo
       - id: trailing-whitespace # Para quitar los espacio al final de la linea
-      - id: check-json
-      - id: check-merge-conflict
-      - id: name-tests-test
+      - id: check-json # valida el format de json
+      - id: name-tests-test # verifiaca que los archivos de prueba tengan el nombre correcto
       # - id: no-commit-to-branch # protege las ramas master y main por default
-      - id: pretty-format-json
   - repo: https://github.com/psf/black
     rev: 23.3.0
     hooks:
