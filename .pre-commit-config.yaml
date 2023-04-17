@@ -7,27 +7,27 @@ repos:
       - id: trailing-whitespace # Para quitar los espacio al final de la linea
       - id: check-json # valida el format de json
       - id: name-tests-test # verifiaca que los archivos de prueba tengan el nombre correcto
-      # - id: no-commit-to-branch # protege las ramas master y main por default
+      - id: no-commit-to-branch # protege las ramas master y main por default
   - repo: https://github.com/psf/black
     rev: 23.3.0
     hooks:
-      - id: black
+      - id: black # formateado de codigo
   - repo: https://github.com/PyCQA/flake8
     rev: 6.0.0
     hooks:
-      - id: flake8
+      - id: flake8 # Validador de codigo
   - repo: https://github.com/PyCQA/bandit
     rev: 1.7.5
     hooks:
-      - id: bandit
+      - id: bandit # Detecta problemas de seguridad
   - repo: https://github.com/PyCQA/autoflake
     rev: v2.0.2
     hooks:
-      - id: autoflake
+      - id: autoflake # formateado de import y variables no definidas
   - repo: https://github.com/pre-commit/mirrors-autopep8
     rev: v1.5
     hooks:
-      - id: autopep8
+      - id: autopep8 # para formatear los comentarios de una sola linea
         args:
           - --in-place
           - --aggressive
